@@ -8,8 +8,8 @@
   },
   "main": "csv2html.js",
   "scripts": {
-    "build": "node csv2html.js data/input.csv templates/template.ejs build/output.html",
-    "prebuild": "del-cli --force build && mkdir build" 
+    "build": "node csv2html.js data/input.csv templates/template.ejs docs/output.html",
+    "prebuild": "del-cli --force docs && mkdir docs" 
   },
   "dependencies": {
     "csv": "0.0.10",
