@@ -49,7 +49,7 @@ csv()
         var outLines = [];
         console.log(data);
         outLines.push(template(data));
-        outputFile = "build/"+index+".html";
+        outputFile = "docs/"+index+".html";
         fs.writeFileSync(outputFile, outLines.join(EOL + EOL), 'utf8')
     } catch (e) {
         console.error(e.stack)
